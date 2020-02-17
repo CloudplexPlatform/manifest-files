@@ -1,0 +1,7 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: faster
+provisioner: kubernetes.io/gce-pd			//cloudprovider dependent configurations
+parameters:
+  type: pd-ssd						//cloudprovider dependent configurations
