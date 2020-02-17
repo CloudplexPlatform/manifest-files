@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-default
+  namespace: default
+spec:
+  serviceAccountName: sa
+  containers:
+  - image: alpine:3.9
+    command:
+    - sleep
+    - "10000"
